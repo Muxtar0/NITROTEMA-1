@@ -1,4 +1,27 @@
 /*--------------
+Fonts
+--------------*/
+@font-face {
+    font-family: SofiaBold;
+    src: url(../fonts/Sofia\ Pro\ Bold\ Az.otf);
+}
+@font-face {
+    font-family: SofiaMedium;
+    src: url(../fonts/Sofia\ Pro\ Medium\ Az.otf);
+}
+@font-face {
+    font-family: SofiaRegular;
+    src: url(../fonts/Sofia\ Pro\ Regular\ Az.otf);
+}
+@font-face {
+    font-family: SofiaLight;
+    src: url(../fonts/Sofia\ Pro\ Light\ Az.otf);
+}
+@font-face {
+    font-family: SofiaUltraLight;
+    src: url(../fonts/Sofia\ Pro\ UltraLight\ Az.otf);
+}
+/*--------------
 Reset
 --------------*/
 *{
@@ -7,6 +30,7 @@ Reset
     box-sizing: border-box;
     text-decoration: none !important;
     list-style: none;
+
 }
 body,html{
     width: 100%;
@@ -42,6 +66,7 @@ Global Style
     flex-direction: column;
 }
 .SectionTitle h2{
+    font-family: SofiaBold;
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
@@ -49,8 +74,11 @@ Global Style
     color: var(--color-text-3);
     margin: 0;
     padding: 0;
+    font-family: SofiaBold;
+
 }
 .SectionTitle p{
+    font-family: SofiaMedium;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -143,6 +171,7 @@ header .DekstopNavCon .col-12 .logo p{
     color: var(--color-text-1);
     margin: 0;
     font-weight: 500;
+    font-family: SofiaBold;
     font-size: 40px;
     line-height: 46.88px;
 }
@@ -164,6 +193,7 @@ header .DekstopNavCon .col-12 .NavList ul li a{
     color: var(--color-text-1);
     font-style: normal;
     font-weight: normal;
+    font-family: SofiaUltraLight;
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
@@ -209,6 +239,7 @@ header .DekstopNavCon .col-12 .NavEnd .right a{
     align-items: center;
     justify-content: center;
     transition: all 300ms;
+    font-family: SofiaUltraLight;
 }
 header .DekstopNavCon .col-12 .NavEnd .right a:hover{
     color: var(--color-2);
@@ -219,500 +250,6 @@ header .DekstopNavCon .col-12 .NavEnd .right a:nth-child(1){
 }
 header .DekstopNavCon .col-12 .NavEnd .right a:nth-child(2){
     padding-left: 8px;
-}
-
-/*--------------
-Banner
---------------*/
-#Banner{
-    min-height: calc(100vh - 80px);
-    background: var(--color-3);
-    padding: 40px 0 0 0 ;
-    overflow: hidden;
-}
-#Banner .left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#Banner .left h1{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 80px;
-    color: var(--color-text-1);
-    margin: 0;
-    padding: 0;
-    font-weight: 500;
-}
-#Banner .left h1 span{
-    color: var(--color-text-2);
-}
-#Banner .left p{
-    margin: 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    color: var(--color-text-1);
-    opacity: 0.7;
-    font-weight: 400;
-    margin-top: 20px;
-}
-#Banner .left .buttons{
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
-}
-#Banner .left .buttons a:nth-child(1){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 187px;
-    height: 61px;
-    background: var(--color-2);
-    border: 1px solid var(--color-2);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    color: var(--color-text-1);
-    transition: all 300ms;
-}
-#Banner .left .buttons a:nth-child(1):hover{
-    background: transparent;
-}
-#Banner .left .buttons a:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 187px;
-    height: 61px;
-    background: var(--color-1);
-    border: 1px solid var(--color-1);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    color: var(--color-text-2);
-    margin-left: 10px;
-    transition: all 300ms;
-}
-#Banner .left .buttons a:nth-child(2):hover{
-    background: transparent;
-}
-#Banner .right {
-    position: relative;
-}
-#Banner .right img{
-    height: 500px;
-}
-#Banner .right .SquareIcon{
-    position: absolute;
-
-    right: 0;
-}
-#Banner .right .Icon1{
-    width: 79px;
-    height: 79px;
-    left: 25%;
-    top: 50%;
-    transform: translate(50%);
-}
-#Banner .right .Icon2{
-    width: 43px;
-    height: 43px;
-    left: 60%;
-    bottom: 25%;
-}
-#Banner .right .Icon3{
-    width: 45.64px;
-    height: 45.64px;
-    transform: rotate(-67.33deg);
-    right: 1%;
-    bottom: 50%;
-}
-#Banner .right .Icon4{
-    width: 109px;
-    height: 109px;
-    transform: rotate(-14.46deg);
-    right: 12%;
-    bottom: 62%;
-}
-#Banner .right .Icon5{
-    width: 45.64px;
-    height: 45.64px;
-    transform: rotate(-67.33deg);
-    left: 40%;
-    top: 10%;
-}
-#Banner .right .Icon6{
-    width: 57.92px;
-    height: 57.92px;
-    transform: rotate(-67.33deg);
-    right: 0%;
-    top: 00%;
-}
-/*--------------
-Best Products
---------------*/
-#BestProducts{
-    padding: 80px 0;
-    background: #E5E5E5;
-}
-#BestProducts .Top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#BestProducts .Top .Text h3{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 50px;
-    color: var(--color-text-3);
-    margin: 0;
-    padding: 0;
-}
-#BestProducts .Top .Text p{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 120%;
-    color: var(--color-text-4);
-    opacity: 0.7;
-    margin: 0;
-    padding: 0;
-    margin-top: 15px;
-    width: 550px;
-}
-#BestProducts .Top a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 182px;
-    height: 66px;
-    background: var(--color-3);
-    border: 1px solid var(--color-3);
-    color: var(--color-text-1);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    transition: all 300ms;
-}
-#BestProducts .Top a:hover{
-    background: transparent;
-    color: var(--color-text-3);
-}
-#BestProducts .Card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:15px;
-}
-#BestProducts .Card .content{
-    background: var(--color-1);
-    padding: 20px;
-    margin: 15px 0;
-}
-
-#BestProducts .Card .content img{
-    width: 100%;
-    height: 339px;
-}   
-#BestProducts .Card .content .CardText{
-    padding: 20px 0;
-}
-#BestProducts .Card .content h4{
-    font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 24px;
-color: var(--color-text-5);
-}
-#BestProducts .Card .content .CardText p{
-    font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 18px;
-color:var(--color-text-6);
-margin: 0;
-}
-#BestProducts .Card .content .bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#BestProducts .Card .content .bottom p{
-    font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-color: var(--color-text-7);
-margin: 0;
-}
-#BestProducts .Card .content .bottom div a{
-    color: var(--color-text-7);
-    font-size: 20px;
-    transition: all 300ms;
-}
-#BestProducts .Card .content .bottom div a:hover{
-    color: var(--color-text-2);
-}
-/*--------------
-Special Edition
---------------*/
-#SpecialEdition{
-    padding: 50px 0;
-    background: var(--color-3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-#SpecialEdition .content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
-
-}
-#SpecialEdition .content h3{
-    color: var(--color-text-1);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 71px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-#SpecialEdition .content p{
-    color: var(--color-text-1);
- 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 120%;
-    /* or 29px */
-    text-align: center;
-    width: 70%;
-    margin-top: 10px;
-}
-#SpecialEdition .content a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-2);
-    color: var(--color-text-1);
-    width: 267px;
-    height: 70px;
-    border: 1px solid var(--color-2);
-    transition: all 300ms;
-    margin-top: 20px;
-}
-#SpecialEdition .content a:hover{
-    background: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-top: transparent;
-    border-bottom: 5px solid var(--color-2);
-}
-#SpecialEdition .Icon1{
-    width: 51.73px;
-    height: 51.73px;
-    transform: rotate(-14.46deg);
-    position: absolute;
-    left:2%;
-    top: 15%;
-}
-#SpecialEdition .Icon2{
-    width: 86.67px;
-    height: 86.67px;
-    transform: rotate(-52.5deg);
-    position: absolute;
-    left: -70px;
-    top:60%;
-}
-#SpecialEdition .Icon3{
-    width: 64.08px;
-    height: 64.08px;
-    transform: rotate(30deg);
-    position: absolute;
-    left: 13%;
-    top: 60%;
-}
-#SpecialEdition .Icon4{
-    width: 46.14px;
-    height: 46.14px;
-    transform: rotate(30deg);
-    position: absolute;
-    right: 10%;
-    top: 20%;
-}
-#SpecialEdition .Icon5{
-    width: 73.79px;
-    height: 73.79px;
-    transform: rotate(-30deg);
-    position: absolute;
-    right: -40px;
-    top: 50%;
-}
-#SpecialEdition .Icon6{
-    width: 60px;
-    height: 28px;
-    position: absolute;
-    right: 13%;
-    bottom:  -10px;
-}
-/*--------------
-Why We
---------------*/
-#WhyWe{
-    padding: 50px 0;
-}
-#WhyWe .SectionTitle{
-    margin-bottom: 50px;
-}
-#WhyWe .Card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-}
-#WhyWe .Card .content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-#WhyWe .Card .content .icon{
-    position: relative;
-}
-#WhyWe .Card .content .icon::before{
-    content: "";
-    background: var(--color-2);
-    opacity: .8;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(45deg);
-    width: 100%;
-    height: 100%;
-    z-index:1;
-}
-#WhyWe .Card .content .icon svg{
-    z-index: 100;
-}
-#WhyWe .Card .content h3{
-    color:var(--color-text-5);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 24px;
-    /* identical to box height */
-    
-    text-align: center;
-    margin-top: 30px;
-}
-#WhyWe .Card .content p{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: var(--color-text-7);
-    margin: 0;
-    margin-top: 5px;
-}
-/*--------------
-Testimonial
---------------*/
-#Testimonial{
-    padding: 40px 0;
-}
-#Testimonial .SectionTitle{
-    margin-bottom: 30px;
-}
-#Testimonial .SectionTitle a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 186px;
-    height: 42px;
-    color: var(--color-text-1);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    background: var(--color-2);
-    border: 1px solid var(--color-2);
-    margin-top: 20px;
-    transition: all 300ms;
-}
-#Testimonial .SectionTitle a:hover{
-    background: transparent;
-    color:var(--color-text-2);
-}
-#Testimonial .CommentsSlider{
-    padding-bottom: 50px;
-
-}
-#Testimonial .CommentsSlider .swiper-slide{
-    border-radius: 15px;
-}
-#Testimonial .CommentsSlider .content{
-    width: 100%;
-    height: 100%;
-    background: var(--color-1);
-    border-radius: 15px;
-    padding: 10px;
-}
-#Testimonial .CommentsSlider .content .ProfilePhoto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 10px;
-}
-#Testimonial .CommentsSlider .content .ProfilePhoto img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-#Testimonial .CommentsSlider .content .ProfilePhoto h3{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: var(--color-text-5);
-    margin: 7px 0;
-}
-#Testimonial .CommentsSlider .content .ProfilePhoto p{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    color: var(--color-text-6);
-    margin: 0;
-}
-#Testimonial .CommentsSlider .content > p{
-    margin: 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 171%;
-    /* or 27px */
-    color: var(--color-text-6);
-    text-align: center;
 }
 /*--------------
 MobileNavCon
@@ -840,6 +377,554 @@ MobileOpenMenu
 .MobileOpenMenu .NavEnd .right a:nth-child(2){
     padding-left: 8px;
 }
+/*--------------
+Banner
+--------------*/
+#Banner{
+
+    background: var(--color-3);
+    padding: 40px 0 0 0 ;
+    overflow: hidden;
+}
+#Banner .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Banner .left h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 80px;
+    color: var(--color-text-1);
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: SofiaBold;
+}
+#Banner .left h1 span{
+    color: var(--color-text-2);
+}
+#Banner .left p{
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-text-1);
+    opacity: 0.7;
+    font-weight: 400;
+    margin-top: 20px;
+    font-family: SofiaMedium;
+}
+#Banner .left .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+#Banner .left .buttons a:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 61px;
+    background: var(--color-2);
+    border: 1px solid var(--color-2);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--color-text-1);
+    transition: all 300ms;
+    font-family: SofiaMedium;
+}
+#Banner .left .buttons a:nth-child(1):hover{
+    background: transparent;
+}
+#Banner .left .buttons a:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 61px;
+    background: var(--color-1);
+    border: 1px solid var(--color-1);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--color-text-2);
+    margin-left: 10px;
+    transition: all 300ms;
+    font-family: SofiaMedium;
+
+}
+#Banner .left .buttons a:nth-child(2):hover{
+    background: transparent;
+}
+#Banner .right {
+    position: relative;
+}
+#Banner .right img{
+    height: 500px;
+}
+#Banner .right .SquareIcon{
+    position: absolute;
+
+    right: 0;
+}
+#Banner .right .Icon1{
+    width: 79px;
+    height: 79px;
+    left: 25%;
+    top: 50%;
+    transform: translate(50%);
+}
+#Banner .right .Icon2{
+    width: 43px;
+    height: 43px;
+    left: 60%;
+    bottom: 25%;
+}
+#Banner .right .Icon3{
+    width: 45.64px;
+    height: 45.64px;
+    transform: rotate(-67.33deg);
+    right: 1%;
+    bottom: 50%;
+}
+#Banner .right .Icon4{
+    width: 109px;
+    height: 109px;
+    transform: rotate(-14.46deg);
+    right: 12%;
+    bottom: 62%;
+}
+#Banner .right .Icon5{
+    width: 45.64px;
+    height: 45.64px;
+    transform: rotate(-67.33deg);
+    left: 40%;
+    top: 10%;
+}
+#Banner .right .Icon6{
+    width: 57.92px;
+    height: 57.92px;
+    transform: rotate(-67.33deg);
+    right: 0%;
+    top: 00%;
+}
+/*--------------
+Best Products
+--------------*/
+#BestProducts{
+    padding: 80px 0;
+    background: #E5E5E5;
+}
+#BestProducts .Top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#BestProducts .Top .Text h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--color-text-3);
+    margin: 0;
+    padding: 0;
+    font-family: SofiaBold;
+
+}
+#BestProducts .Top .Text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--color-text-4);
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    width: 550px;
+    font-family: SofiaMedium;
+
+}
+#BestProducts .Top a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    height: 66px;
+    background: var(--color-3);
+    border: 1px solid var(--color-3);
+    color: var(--color-text-1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    transition: all 300ms;
+    font-family: SofiaMedium;
+
+}
+#BestProducts .Top a:hover{
+    background: transparent;
+    color: var(--color-text-3);
+}
+#BestProducts .Card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:15px;
+}
+#BestProducts .Card .content{
+    background: var(--color-1);
+    padding: 20px;
+    margin: 15px 0;
+}
+
+#BestProducts .Card .content img{
+    width: 100%;
+    height: 339px;
+}   
+#BestProducts .Card .content .CardText{
+    padding: 20px 0;
+}
+#BestProducts .Card .content h4{
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+color: var(--color-text-5);
+font-family: SofiaBold;
+
+}
+#BestProducts .Card .content .CardText p{
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+color:var(--color-text-6);
+margin: 0;
+font-family: SofiaBold;
+
+}
+#BestProducts .Card .content .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#BestProducts .Card .content .bottom p{
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: var(--color-text-7);
+margin: 0;
+font-family: SofiaBold;
+
+}
+#BestProducts .Card .content .bottom div a{
+    color: var(--color-text-7);
+    font-size: 20px;
+    transition: all 300ms;
+}
+#BestProducts .Card .content .bottom div a:hover{
+    color: var(--color-text-2);
+}
+/*--------------
+Special Edition
+--------------*/
+#SpecialEdition{
+    padding: 50px 0;
+    background: var(--color-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+#SpecialEdition .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+}
+#SpecialEdition .content h3{
+    color: var(--color-text-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 71px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: SofiaBold;
+
+}
+#SpecialEdition .content p{
+    color: var(--color-text-1);
+ 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    text-align: center;
+    width: 70%;
+    margin-top: 10px;
+    font-family: SofiaMedium;
+
+}
+#SpecialEdition .content a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-2);
+    color: var(--color-text-1);
+    width: 267px;
+    height: 70px;
+    border: 1px solid var(--color-2);
+    transition: all 300ms;
+    margin-top: 20px;
+    font-family: SofiaMedium;
+
+}
+#SpecialEdition .content a:hover{
+    background: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: 5px solid var(--color-2);
+}
+#SpecialEdition .Icon1{
+    width: 51.73px;
+    height: 51.73px;
+    transform: rotate(-14.46deg);
+    position: absolute;
+    left:2%;
+    top: 15%;
+}
+#SpecialEdition .Icon2{
+    width: 86.67px;
+    height: 86.67px;
+    transform: rotate(-52.5deg);
+    position: absolute;
+    left: -70px;
+    top:60%;
+}
+#SpecialEdition .Icon3{
+    width: 64.08px;
+    height: 64.08px;
+    transform: rotate(30deg);
+    position: absolute;
+    left: 13%;
+    top: 60%;
+}
+#SpecialEdition .Icon4{
+    width: 46.14px;
+    height: 46.14px;
+    transform: rotate(30deg);
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+#SpecialEdition .Icon5{
+    width: 73.79px;
+    height: 73.79px;
+    transform: rotate(-30deg);
+    position: absolute;
+    right: -40px;
+    top: 50%;
+}
+#SpecialEdition .Icon6{
+    width: 60px;
+    height: 28px;
+    position: absolute;
+    right: 13%;
+    bottom:  -10px;
+}
+/*--------------
+Why We
+--------------*/
+#WhyWe{
+    padding: 50px 0;
+    background-image: url(../images/beautiful-shot-rocky-mountains-covered-with-white-snow\ 3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#WhyWe::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--color-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 1;
+}
+#WhyWe .SectionTitle{
+    margin-bottom: 50px;
+    z-index: 100;
+}
+#WhyWe .Card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 100;
+}
+#WhyWe .Card .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#WhyWe .Card .content .icon{
+    position: relative;
+}
+#WhyWe .Card .content .icon::before{
+    content: "";
+    background: var(--color-2);
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    width: 100%;
+    height: 100%;
+    z-index:1;
+}
+#WhyWe .Card .content .icon svg{
+    z-index: 100;
+}
+#WhyWe .Card .content h3{
+    color:var(--color-text-5);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height */
+    font-family: SofiaBold;
+
+    
+    text-align: center;
+    margin-top: 30px;
+}
+#WhyWe .Card .content p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--color-text-7);
+    margin: 0;
+    margin-top: 5px;
+    font-family: SofiaMedium;
+
+}
+/*--------------
+Testimonial
+--------------*/
+#Testimonial{
+    padding: 40px 0;
+}
+#Testimonial .SectionTitle{
+    margin-bottom: 30px;
+}
+#Testimonial .SectionTitle a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 42px;
+    color: var(--color-text-1);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: var(--color-2);
+    border: 1px solid var(--color-2);
+    margin-top: 20px;
+    transition: all 300ms;
+    font-family: SofiaMedium;
+
+}
+#Testimonial .SectionTitle a:hover{
+    background: transparent;
+    color:var(--color-text-2);
+}
+#Testimonial .CommentsSlider{
+    padding-bottom: 50px;
+
+}
+#Testimonial .CommentsSlider .swiper-slide{
+    border-radius: 15px;
+}
+#Testimonial .CommentsSlider .content{
+    width: 100%;
+    height: 100%;
+    background: var(--color-1);
+    border-radius: 15px;
+    padding: 10px;
+}
+#Testimonial .CommentsSlider .content .ProfilePhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#Testimonial .CommentsSlider .content .ProfilePhoto img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#Testimonial .CommentsSlider .content .ProfilePhoto h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--color-text-5);
+    margin: 7px 0;
+    font-family: SofiaBold;
+
+}
+#Testimonial .CommentsSlider .content .ProfilePhoto p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-text-6);
+    margin: 0;
+    font-family: SofiaMedium;
+
+
+}
+#Testimonial .CommentsSlider .content > p{
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 171%;
+    /* or 27px */
+    color: var(--color-text-6);
+    text-align: center;
+    font-family: SofiaMedium;
+
+}
+
 /*--------------
 Medias
 --------------*/
