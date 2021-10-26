@@ -802,7 +802,7 @@ Why We
     transform: rotate(45deg);
     width: 100%;
     height: 100%;
-    z-index:1;
+    z-index:-1;
 }
 #WhyWe .Card .content .icon svg{
     z-index: 100;
