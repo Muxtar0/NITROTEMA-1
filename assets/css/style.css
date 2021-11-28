@@ -133,9 +133,10 @@ Swiper
       border-radius: 0;
       width: 16px;
       height: 16px;
+      
   }
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active{
-      background: var(--color-2);
+      background: #A1B71B;
   }
 /*--------------
 Header
@@ -390,6 +391,40 @@ Banner
     padding: 40px 0 0 0 ;
     overflow: hidden;
 }
+#Banner.UrunBanner .col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+#Banner.UrunBanner .col-12 h2{
+    margin: 0;
+    padding: 0;
+    font-family: SofiaBold;
+    font-style: normal;
+font-weight: 600;
+font-size: 60px;
+line-height: 60px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+#Banner.UrunBanner .col-12 p{
+    margin: 0;
+    padding: 0;
+    font-family: SofiaRegular;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+margin-top: 15px;
+}
 #Banner .left{
     display: flex;
     flex-direction: column;
@@ -432,8 +467,7 @@ Banner
     justify-content: center;
     width: 187px;
     height: 61px;
-    background: var(--color-2);
-    border: 1px solid var(--color-2);
+    background:  var(--color-2);
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -444,6 +478,8 @@ Banner
 }
 #Banner .left .buttons a:nth-child(1):hover{
     background: transparent;
+    
+    
 }
 #Banner .left .buttons a:nth-child(2){
     display: flex;
@@ -452,7 +488,7 @@ Banner
     width: 187px;
     height: 61px;
     background: var(--color-1);
-    border: 1px solid var(--color-1);
+    
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -559,11 +595,11 @@ Best Products
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 182px;
-    height: 66px;
+    width: 167px;
+    height: 61px;
     background: var(--color-3);
-    border: 1px solid var(--color-3);
-    color: var(--color-text-1);
+    
+    color: white;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -571,12 +607,8 @@ Best Products
     text-align: center;
     transition: all 300ms;
     font-family: SofiaMedium;
+}
 
-}
-#BestProducts .Top a:hover{
-    background: transparent;
-    color: var(--color-text-3);
-}
 #BestProducts .Card{
     display: flex;
     align-items: center;
@@ -588,11 +620,91 @@ Best Products
     padding: 20px;
     margin: 15px 0;
 }
-
+#BestProducts .Card .content .ImgDiv{
+    position: relative;
+}
 #BestProducts .Card .content img{
     width: 100%;
     height: 339px;
 }   
+#BestProducts .Card .content .HoverMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    opacity: 0;
+    visibility: hidden;
+}
+#BestProducts .Card .content .ImgDiv:hover .HoverMenu{
+    opacity: 1;
+    visibility: visible;
+}
+#BestProducts .Card .content .HoverMenu::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .6;
+    z-index: 1;
+}
+#BestProducts .Card .content .HoverMenu a:nth-child(1){
+
+    margin: 0;
+    padding: 0;
+    background: var(--color-2);
+    color: white;
+    width: 182px;
+height: 61px;
+text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+color: #FFFFFF;
+font-family: SofiaBold;
+z-index: 100;
+}
+#BestProducts .Card .content .HoverMenu a:nth-child(2){
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 182px;
+    margin-top: 10px;
+height: 61px;
+text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+color: #FFFFFF;
+font-family: SofiaBold;
+z-index: 100;
+}
 #BestProducts .Card .content .CardText{
     padding: 20px 0;
 }
@@ -615,30 +727,30 @@ margin: 0;
 font-family: SofiaLight;
 
 }
+#BestProducts .Card .content .CardText .PriceDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#BestProducts .Card .content .CardText > h4{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 15px;
+    color: #000000;
+    color: var(--color-text-5);
+    font-family: SofiaBold;
+}
+#BestProducts .Card .content .CardText
 #BestProducts .Card .content .bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#BestProducts .Card .content .bottom p{
-    font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-color: var(--color-text-7);
-margin: 0;
-font-family: SofiaBold;
 
-}
-#BestProducts .Card .content .bottom div a{
-    color: var(--color-text-7);
-    font-size: 20px;
-    transition: all 300ms;
-}
-#BestProducts .Card .content .bottom div a:hover{
-    color: var(--color-text-2);
-}
+
 /*--------------
 Special Edition
 --------------*/
@@ -757,20 +869,22 @@ Special Edition
 Why We
 --------------*/
 #WhyWe{
-    padding: 100px 0;
-    background-image: url(../images/beautiful-shot-rocky-mountains-covered-with-white-snow\ 4.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+    padding-bottom: 100px;
+    margin-top: 100px;
+
     position: relative;
 }
 #WhyWe::before{
     content: "";
     width: 100%;
     height: 100%;
+    background-image: url(../images/beautiful-shot-rocky-mountains-covered-with-white-snow\ 4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     opacity: .9;
     z-index: 1;
@@ -792,21 +906,30 @@ Why We
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    
+
+border-radius: 10px;
+padding: 20px 0;
+transition: all 300ms;
+}
+
+#WhyWe .Card .content:hover{
+    transform: translateY(-30px);
 }
 #WhyWe .Card .content .icon{
     position: relative;
 }
 #WhyWe .Card .content .icon::before{
     content: "";
-    background: var(--color-2);
-    opacity: .5;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transform: rotate(45deg);
-    width: 100%;
-    height: 100%;
-    z-index:-1;
+    background: var(--color-2);
+    z-index: -1;
+    opacity: .5;
 }
 #WhyWe .Card .content .icon svg{
     z-index: 100;
@@ -851,23 +974,20 @@ Testimonial
     justify-content: center;
     width: 186px;
     height: 42px;
-    color: var(--color-text-1);
+    color: white;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
     background: var(--color-2);
-    border: 1px solid var(--color-2);
+    
     margin-top: 20px;
     transition: all 300ms;
     font-family: SofiaLight;
+    
+}
 
-}
-#Testimonial .SectionTitle a:hover{
-    background: transparent;
-    color:var(--color-text-2);
-}
 #Testimonial .CommentsSlider{
     padding-bottom: 50px;
 
@@ -929,6 +1049,299 @@ Testimonial
 
 }
 /*--------------
+Product Details
+--------------*/
+#ProductDetail{
+    padding: 50px 0;
+}
+#ProductDetail .TopContainer{
+    background: white;
+    padding: 20px;
+}
+#ProductDetail .TopContainer .left{
+    cursor: pointer;
+}
+#ProductDetail .TopContainer .left img{
+    width: 100%;
+    height: 100%;
+}
+#ProductDetail .TopContainer .right .Top h3{
+    margin: 0;
+    padding: 0;
+    font-family: SofiaBold;
+    font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 165%;
+/* or 49px */
+
+
+color: var(--color-text-5);
+
+}
+#ProductDetail .TopContainer .right .Top .Buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+#ProductDetail .TopContainer .right .Top .Buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height: 56px;
+    font-family: SofiaBold;
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+}
+#ProductDetail .TopContainer .right .Top .Buttons a:nth-child(1){
+    background: transparent;
+    border: 1px solid var(--color-2);
+    color: var(--color-text-2);
+}
+#ProductDetail .TopContainer .right .Top .Buttons a:nth-child(2){
+    background: var(--color-2);
+    border: 1px solid var(--color-2);
+    color: var(--color-text-1);
+}
+#ProductDetail .TopContainer .right .ProductDetails{
+    margin-top: 20px;
+    width: 100%;
+}
+#ProductDetail .TopContainer .right .ProductDetails ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#ProductDetail .TopContainer .right .ProductDetails ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#ProductDetail .TopContainer .right .ProductDetails ul li p:nth-child(1){
+    margin: 0;
+    padding: 0;
+    font-family: SofiaBold;
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 63%;
+/* or 13px */
+
+
+color: #000000;
+}
+#ProductDetail .TopContainer .right .ProductDetails ul li p:nth-child(2){
+    margin: 0;
+    padding: 0;
+    font-family: SofiaLight;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 63%;
+    /* or 13px */
+    
+    
+    color: #000000;
+    
+    opacity: 0.7;
+}
+
+#ProductDetail .BottomContainer .row{
+    padding: 0;
+}
+#ProductDetail .BottomContainer .col-12{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+#ProductDetail .BottomContainer .col-12 .ImgDiv{
+    background: white;
+    width: 19%;
+    margin-left: 10px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#ProductDetail .BottomContainer .col-12 .ImgDiv img{
+    width: 135.27px;
+height: 116.32px;
+}
+/*--------------
+TabSection
+--------------*/
+#TabSection .TabTarget{
+    padding: 0;
+    position: relative;
+}
+#TabSection .TabTarget::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    z-index: 1;
+    opacity: 0.2;
+}
+#TabSection .TabTarget > .col-12{
+    padding: 0;
+}
+#TabSection .TabTarget > .row{
+    padding: 0;
+}
+#TabSection .TabTarget .container{
+    z-index: 100;
+
+}
+#TabSection .TabTarget .container .col-12 ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+#TabSection .TabTarget .container .col-12 ul li {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    color: #525252;
+    margin: 0 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+#TabSection .TabTarget .container .col-12 ul li.active{
+    color: var(--color-text-2);
+    border-bottom: 2px solid var(--color-2);
+}
+#TabSection .TabContent{
+    margin-top: 30px;
+}
+#TabSection .TabContent .TabContentCol{
+    display: none;
+}
+#TabSection .TabContent .TabContentCol.active{
+    display: inline-block;
+}
+#TabSection .TabContent .TanimCol .TopText h3{
+    font-family: SofiaBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+#TabSection .TabContent .TanimCol .TopText p{
+    font-family: SofiaLight;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 165%;
+/* or 33px */
+
+
+color: #525252;
+}
+#TabSection .TabContent .TanimCol .List{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+#TabSection .TabContent .TanimCol .List > div:not(.List1){
+    margin-left: 20px;
+}
+#TabSection .TabContent .TanimCol .List > div h3{
+    margin: 0;
+    padding: 0;
+    font-family: SofiaBold;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 30px;
+
+color: #000000;
+}
+#TabSection .TabContent .TanimCol .List   ul{
+    list-style-type:unset !important;
+    margin-top: 15px;
+}
+#TabSection .TabContent .TanimCol .List   ul li{
+    margin: 5px 0;
+    font-family: SofiaLight;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+
+/* or 33px */
+
+
+color: #000000;
+}
+/*--------------
+SameProducts
+--------------*/
+#SameProducts{
+    padding: 40px 0;
+}
+#SameProducts .TopTextCon{
+    padding-bottom: 10px;
+    position: relative;
+}
+#SameProducts .TopTextCon::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    opacity: .2;
+}
+#SameProducts .TopTextCon .container .col-12{
+    padding: 0;
+}
+#SameProducts .Text h2{
+    font-family: SofiaBold;
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 50px;
+/* identical to box height */
+
+
+color: #000000;
+}
+#SameProducts .ProductsCon{
+    margin-top: 15px;
+}
+#SameProducts .ProductsCon .Products{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#SameProducts .ProductsCon img{
+    width: 33.33%;
+
+}
+#SameProducts .ProductsCon img:not(:nth-child(1)){
+    margin-left: 15px;
+}
+/*--------------
 Footer
 --------------*/
 footer{
@@ -970,10 +1383,11 @@ footer .FooterTopCon .LeftCol .SocilaMedias a{
     justify-content: center;
     width: 48px;
     height: 48px;
-    border-radius: 5px;
-    background: var(--color-4);
-    border: 1px solid var(--color-4);
+    border-radius: 50%;
+    
+    border: 1px solid #FFFFFF;
     transition: all 300ms;
+   
 }
 footer .FooterTopCon .LeftCol .SocilaMedias a:hover{
     background: transparent;
@@ -1034,6 +1448,75 @@ footer .FooterTopCon .MainCol ul li a{
     color: var(--color-text-9);
 
 }
+footer .FooterTopCon .FooterEndCol h3{
+    font-family: SofiaRegular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--color-text-9);
+    position: relative;
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: start;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+footer .FooterTopCon .FooterEndCol p{
+    margin:0;
+    padding: 0;
+    margin-top: 15px;
+    font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 116%;
+/* or 23px */
+font-family: SofiaRegular;
+
+color: #FFFFFF;
+}
+footer .FooterTopCon .FooterEndCol .InputDiv{
+    margin-top: 20px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .FooterTopCon .FooterEndCol .InputDiv input{
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}
+footer .FooterTopCon .FooterEndCol .InputDiv button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    background: var(--color-2);
+    color: white;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100.19%;
+    /* identical to box height, or 18px */
+    font-family: SofiaLight;
+    transform: translateX(1px);
+    color: #FFFFFF;
+    transition: all 300ms;
+}
+footer .FooterTopCon .FooterEndCol .InputDiv button:hover{
+    transform: translateX(10px);
+}
 footer .FooterBottom{
     width: 100%;
     padding: 10px 0;
@@ -1079,6 +1562,12 @@ Medias
     footer .FooterTopCon .MainCol:not(.MainCol1){
         margin-left: 50px;
     }
+    #ProductDetail .TopContainer .left{
+        margin-bottom: 20px;
+    }
+    #ProductDetail .BottomContainer .col-12 .ImgDiv{
+        width: 18%;
+    }
 }
 @media (max-width:600px){
     #Banner .left h1{
@@ -1118,5 +1607,27 @@ Medias
     }
     footer .FooterTopCon .MainCol:not(.MainCol1){
         margin-left: 0px;
+    }
+    #ProductDetail .BottomContainer .col-12 .ImgDiv{
+        width: 45%;
+    }
+    #TabSection .TabContent .TanimCol .List{
+        flex-direction: column;
+    }
+    #TabSection .TabContent .TanimCol .List{
+        align-items: flex-start;
+    }
+    #TabSection .TabContent .TanimCol .List > div{
+        margin-left: 0 !important;
+    }
+    #SameProducts .ProductsCon img{
+        width: 45%;
+    }
+    #Banner.UrunBanner .col-12 h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    #Banner.UrunBanner .col-12 p{
+        font-size: 18px;
     }
 }
