@@ -1579,10 +1579,16 @@ Medias
         align-items: center;
         justify-content: center;
     }
+    .SquareIcon{
+        display:none;
+    }
 }
 @media (max-width:600px){
     #Banner .left h1{
         font-size: 60px;
+    }
+    #Banner .right img{
+        height: 300px;
     }
     #Banner .right .Icon6{
         top: 30%;
@@ -1612,9 +1618,12 @@ Medias
     .SectionTitle p{
         width: 100%;
     }
+    #SpecialEdition .content p{
+        width: 100%;
+    }
     footer .FooterTopCon .MainCol{
         margin-top: 30px;
-        align-items: flex-start;
+        align-items: center;
     }
     footer .FooterTopCon .MainCol:not(.MainCol1){
         margin-left: 0px;
