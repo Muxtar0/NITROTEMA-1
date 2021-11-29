@@ -206,27 +206,48 @@
         <div class="container BottomContainer">
             <div class="row">
                 <div class="col-12">
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper ProductImages">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/beautiful-shot-rocky-mountains-covered-with-white-snow 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ImgDiv">
+                                    <img class="BottomImage" src="assets/images/Group 3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/beautiful-shot-rocky-mountains-covered-with-white-snow 3.png" alt="">
-                    </div>
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/Group 3.png" alt="">
-                    </div>
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/Group 3.png" alt="">
-                    </div>
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/Group 3.png" alt="">
-                    </div>
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/Group 3.png" alt="">
-                    </div>
-                    <div class="ImgDiv">
-                        <img class="BottomImage" src="assets/images/Group 3.png" alt="">
-                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -395,7 +416,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 FooterEndCol">
+                <div class="col-lg-3 col-md-12 col-12 FooterEndCol">
                     <h3>İletişim</h3>
                     <ul>
                         <li>
@@ -438,8 +459,34 @@
     <!-- Script start -->
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/ProductImage.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+        var swiper = new Swiper(".ProductImages", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        breakpoints: {
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
 
 </body>
 </html>

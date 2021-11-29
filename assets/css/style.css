@@ -1161,14 +1161,13 @@ color: #000000;
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
+    margin-top: 20px;
 }
 #ProductDetail .BottomContainer .col-12 .ImgDiv{
     background: white;
-    width: 19%;
+    width: 100%;
     height: 200px;
-    margin-left: 10px;
-    padding: 2px;
-    margin-top: 15px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1449,6 +1448,7 @@ footer .FooterTopCon .MainCol ul li a{
     color: var(--color-text-9);
 
 }
+
 footer .FooterTopCon .FooterEndCol h3{
     font-family: SofiaRegular;
     font-style: normal;
@@ -1564,8 +1564,20 @@ Medias
     #ProductDetail .TopContainer .left{
         margin-bottom: 20px;
     }
-    #ProductDetail .BottomContainer .col-12 .ImgDiv{
-        width: 18%;
+    footer .FooterTopCon .FooterEndCol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    footer .FooterTopCon .FooterEndCol ul{
+        display: inline-block;
+    }
+    footer .FooterTopCon .FooterEndCol ul li:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media (max-width:600px){
@@ -1607,9 +1619,7 @@ Medias
     footer .FooterTopCon .MainCol:not(.MainCol1){
         margin-left: 0px;
     }
-    #ProductDetail .BottomContainer .col-12 .ImgDiv{
-        width: 45%;
-    }
+
     #TabSection .TabContent .TanimCol .List{
         flex-direction: column;
     }
