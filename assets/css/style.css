@@ -1489,17 +1489,21 @@ footer .FooterTopCon .FooterEndCol ul li{
     padding: 10px;
 
     color: white;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin: 5px 0;
+}
+footer .FooterTopCon .FooterEndCol ul li a{
+    color: #FFFFFF;
     text-align: end;
     font-family: SofiaBold;
 font-style: normal;
 font-weight: 600;
 font-size: 22px;
 line-height: 26px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #FFFFFF;
-margin: 5px 0;
 }
 footer .FooterTopCon .FooterEndCol ul li:not(:last-child){
     background: #1C222E;
